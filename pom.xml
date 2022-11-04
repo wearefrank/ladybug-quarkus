@@ -46,7 +46,39 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
+    <!--
+      Add Ladybug
+    -->
+    <dependency>
+      <groupId>org.ibissource</groupId>
+      <artifactId>ibis-ladybug</artifactId>
+      <version>2.3-20221104.133409</version>
+    </dependency>
+    <!--
+      Add JSON extension because JAX-RS methods in Ladybug use JSON
+      It is also possible to use quarkus-resteasy-reactive-jackson but jackson is already tested in ibis-ladybug-test-webapp
+     -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy-reactive-jsonb</artifactId>
+    </dependency>
+    <!--
+      Support (the Ladybug) servlets. See also src/main/resources/META-INF/web.xml and
+      https://quarkus.io/guides/http-reference#servlet-config
+    -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-undertow</artifactId>
+    </dependency>
   </dependencies>
+  <repositories>
+    <!-- Support Ladybug versions not published on Maven central (yet) -->
+    <repository>
+      <id>wearefrank</id>
+      <name>WeAreFrank!</name>
+      <url>https://nexus.frankframework.org/content/repositories/public</url>
+    </repository>
+  </repositories>
   <build>
     <plugins>
       <plugin>

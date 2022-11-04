@@ -1,4 +1,24 @@
-# ladybug-quarkus Project
+# Demo and test Ladybug in Quarkus
+
+This application has initially been generated as described at
+https://quarkus.io/guides/getting-started#bootstrapping-the-project (see tab Maven) with:
+
+```
+mvn io.quarkus.platform:quarkus-maven-plugin:2.13.3.Final:create -DprojectGroupId=org.wearefrank -DprojectArtifactId=ladybug-quarkus -Dextensions=resteasy-reactive
+```
+
+You can run it by starting cmd.bat from the Frank!Runner (for now first edit cmd.bat and change JAVA_HOME=%JDK_8_DIR% to
+JAVA_HOME=%JDK_11_DIR%) and execute the following:
+
+```
+cd ..\ladybug-quarkus
+mvnw quarkus:dev
+```
+
+When also changing the Ladybug sources change the Ladybug version in the pom.xml to the Ladybug SNAPSHOT version and
+restart Quarkus after every Ladybug build.
+
+The rest of this file is the same as it was initially generated.
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 

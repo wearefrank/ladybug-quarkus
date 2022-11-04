@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+		xmlns="http://java.sun.com/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+		version="3.0"
+	>
+
+	<display-name>Demo and test Ladybug in Quarkus</display-name>
+
+	<servlet>
+		<servlet-name>TestToolServlet</servlet-name>
+		<servlet-class>nl.nn.testtool.web.Echo2Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestToolServlet</servlet-name>
+		<url-pattern>/testtool</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LadybugBackendServlet</servlet-name>
+		<servlet-class>nl.nn.testtool.web.RedirectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LadybugBackendServlet</servlet-name>
+		<url-pattern>/ladybug/api/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LadybugFrontendServlet</servlet-name>
+		<servlet-class>nl.nn.testtool.web.FrontendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LadybugFrontendServlet</servlet-name>
+		<url-pattern>/ladybug/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
