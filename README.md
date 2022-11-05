@@ -7,8 +7,15 @@ https://quarkus.io/guides/getting-started#bootstrapping-the-project (see tab Mav
 mvn io.quarkus.platform:quarkus-maven-plugin:2.13.3.Final:create -DprojectGroupId=org.wearefrank -DprojectArtifactId=ladybug-quarkus -Dextensions=resteasy-reactive
 ```
 
-You can run it by starting cmd.bat from the Frank!Runner (for now first edit cmd.bat and change JAVA_HOME=%JDK_8_DIR% to
-JAVA_HOME=%JDK_11_DIR%) and execute the following:
+Start this application like any other Quarkus application with:
+
+```
+mvnw quarkus:dev
+```
+
+Or use Java and Maven downloaded and installed by the [Frank!Runner](https://github.com/ibissource/frank-runner). Edit
+the cmd.bat in the frank-runner folder, change JAVA_HOME=%JDK_8_DIR% to JAVA_HOME=%JDK_11_DIR% (will be overwritten
+again when running Fank!Runnwer), run cmd.bat and execute the following:
 
 ```
 cd ..\ladybug-quarkus
