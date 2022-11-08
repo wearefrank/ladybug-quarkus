@@ -23,10 +23,13 @@ cd ..\ladybug-quarkus
 mvnw quarkus:dev
 ```
 
-When also changing the Ladybug sources change the Ladybug version in the pom.xml to the Ladybug SNAPSHOT version and
-restart Quarkus after every Ladybug build.
+If you have made changes to Ladybug and would like to use those changes in this project, you must make sure to change
+the version of Ladybug inside this project's pom.xml to the SNAPSHOT version of your Ladybug project. You must restart
+Quarkus after every Ladybug build that contains your new changes.
 
+================================================================
 The rest of this file is the same as it was initially generated.
+================================================================
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
