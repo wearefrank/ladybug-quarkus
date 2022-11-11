@@ -52,7 +52,7 @@
     <dependency>
       <groupId>org.ibissource</groupId>
       <artifactId>ibis-ladybug</artifactId>
-      <version>2.3-20221104.133409</version>
+      <version>2.3-20221111.165140</version>
     </dependency>
     <!--
       Add JSON extension because JAX-RS methods in Ladybug use JSON
