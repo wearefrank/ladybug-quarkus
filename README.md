@@ -27,9 +27,7 @@ If you have made changes to Ladybug and would like to use those changes in this 
 the version of Ladybug inside this project's pom.xml to the SNAPSHOT version of your Ladybug project. You must restart
 Quarkus after every Ladybug build that contains your new changes.
 
-================================================================
-The rest of this file is the same as it was initially generated.
-================================================================
+> The rest of this README is the same as the initially generated README by Quarkus.
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
