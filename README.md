@@ -23,6 +23,10 @@ cd ..\ladybug-quarkus
 mvnw quarkus:dev
 ```
 
+And visit:
+
+- http://localhost:8080/
+
 If you have made changes to Ladybug and would like to use those changes in this project, you must make sure to change
 the version of Ladybug inside this project's pom.xml to the SNAPSHOT version of your Ladybug project. You must restart
 Quarkus after every Ladybug build that contains your new changes.
