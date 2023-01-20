@@ -52,7 +52,7 @@
     <dependency>
       <groupId>org.ibissource</groupId>
       <artifactId>ibis-ladybug</artifactId>
-      <version>2.3-20221111.165140</version>
+      <version>2.3-20230111.174106</version><!-- From 2.3-20230120.172123 and onwards javax.inject.Inject is replaced in Ladybug pom.xml. It is still possible to build the latest version with the Frank!Runner (disables replacements) and use 2.3-SNAPSHOT -->
     </dependency>
     <!--
       Add JSON extension because JAX-RS methods in Ladybug use JSON
