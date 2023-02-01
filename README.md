@@ -1,12 +1,5 @@
 # Demo and test Ladybug in Quarkus
 
-This application has initially been generated as described at
-https://quarkus.io/guides/getting-started#bootstrapping-the-project (see tab Maven) with:
-
-```
-mvn io.quarkus.platform:quarkus-maven-plugin:2.13.3.Final:create -DprojectGroupId=org.wearefrank -DprojectArtifactId=ladybug-quarkus -Dextensions=resteasy-reactive
-```
-
 Start this application like any other Quarkus application with:
 
 ```
@@ -30,6 +23,13 @@ And visit:
 If you have made changes to Ladybug and would like to use those changes in this project, you must make sure to change
 the version of Ladybug inside this project's pom.xml to the SNAPSHOT version of your Ladybug project. You must restart
 Quarkus after every Ladybug build that contains your new changes.
+
+This application was initially generated as described at
+https://quarkus.io/guides/getting-started#bootstrapping-the-project (see tab Maven) with:
+
+```
+mvn io.quarkus.platform:quarkus-maven-plugin:2.13.3.Final:create -DprojectGroupId=org.wearefrank -DprojectArtifactId=ladybug-quarkus -Dextensions=resteasy-reactive
+```
 
 ***
 The rest of this README is the same as the initially generated README by Quarkus.
